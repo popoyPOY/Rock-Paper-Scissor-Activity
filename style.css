@@ -7,7 +7,8 @@ body {
 }
 
 .container {
-     top: 50%;
+     padding-top: 8rem;
+     top: 60%;
      left: 50%;
      display: flex;
      align-items: center;
@@ -28,9 +29,10 @@ button {
      justify-content: center;
      padding: 20px;
      padding-top: 5px;
-     padding-bottom: 30px;
+     padding-bottom: 46px;
      font-weight: bold;
      border-style: none;
+     font-size: 20px;
      cursor: pointer;
 }
 
@@ -59,18 +61,34 @@ button {
 }
 
 .rock:hover {
-     transform: 0.5s;
-     transition: 0.5s;
+     transition: 0.4s;
+     transform: rotate(10deg);
 }
 
 .paper {
      color: #F1F6F9;
 }
 
+.paper:hover {
+     transition: 0.4s;
+     transform: rotate(-10deg);
+}
+
 .scissor {
      color: #ECC9EE;
 }
 
+.scissor:hover {
+     color: #ECC9EE;
+     transition: 0.4s;
+     transform: rotate(10deg);
+}
+
 h1 {
      font-size: 50px;
+}
+
+button:hover{
+     transition: 0.2s;
+     color: #ffff;
 }
